@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adarsh Verma | AI Enthusiast & Web Developer</title>
+    <meta name="description" content="Portfolio of Adarsh Verma, a Web Developer and AI Enthusiast specializing in AI, Machine Learning, and Web Development.">
+    <meta name="keywords" content="Adarsh Verma, Web Developer, AI Enthusiast, Machine Learning, Portfolio">
+    <meta name="author" content="Adarsh Verma">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer | AI Enthusiast | Tech Innovator</p>
+                <h1>Hi, I'm <span class="highlight">Adarsh Verma</span><br>Aspiring Software Engineer</h1><br>
+                <p>I specialize in building intelligent systems and crafting user-friendly digital experiences. <br> My goal is to solve real-world problems through innovative technology and creative solutions.</p><br>
+                <a href="#about" class="btn btn-primary">Explore My Work <i class="fas fa-arrow-down"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/profile.jpg" alt="Adarsh Verma">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        <i class="fas fa-hand-peace"></i> Hi, I'm <strong>Adarsh Verma</strong>, a <strong>B.Tech Computer Science</strong> student at 
+                        <strong>Sikkim Manipal Institute of Technology</strong> (2025). Passionate about <strong>AI, Machine Learning, and Web Development</strong>, 
+                        I love building intelligent and scalable solutions.
+                    </p>
+                    <br>
+                    <p>
+                        <i class="fas fa-briefcase"></i> <strong>Professional Experience:</strong><br>
+                        - <strong>Infosys Intern:</strong> Built a <strong>Meeting Summarizer & Plan of Action Generator</strong> using <strong>NLP</strong>.<br>
+                        - Developed a <strong>Personality Assessment Tool</strong> (Big Five Model).
+                    </p>
+                    <br>
+                    <p>
+                        <i class="fas fa-lightbulb"></i> <strong>Beyond Coding:</strong><br>
+                        - Solved <strong>100+ LeetCode problems</strong> to sharpen my problem-solving skills.<br>
+                        - Avid <strong>chess player</strong> and <strong>cricket enthusiast</strong>.<br>
+                        - Always exploring new technologies to stay ahead in the tech world.
+                    </p>
+                    <br>
+                    <p>
+                        <i class="fas fa-rocket"></i> Let's innovate and build something amazing together!
+                    </p>
+                    <a href="#skills" class="btn btn-secondary">View Skills <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <div class="skills-list">
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h2>Programming Languages</h2>
+                    <div class="skill">
+                        <h3>C++</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h3>SQL</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h3>Python</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-brain"></i>
+                    <h2>Emerging Technologies</h2>
+                    <p>Artificial Intelligence, Machine Learning, Data Analysis</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-tools"></i>
+                    <h2>Tools & Platforms</h2>
+                    <p>SFML, Git, AWS (S3), Streamlit, Pandas, Numpy, sklearn, Jupyter Notebook, Flutter, Dart, Android Studio</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list" id="projects-list">
+                <!-- Projects will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section id="cta">
+        <div class="container">
+            <h2>Let's Build Something Amazing Together!</h2>
+            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h1 class="sub-title">Get In Touch</h1>
+            <div class="row">
+                <div class="contact-left">
+                    <p><i class="fas fa-paper-plane"></i> adarshsamrat678@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> (+91) 6387242342</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/adarsh-verma-250830232" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/adarshverma7" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://leetcode.com/adarshverma7" target="_blank"><i class="fas fa-code"></i></a>
+                    </div>
+                    <a href="Resume.pdf" download class="btn btn-primary">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="10" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-nav">
+            <a href="#header">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="copyright">
+            <p>© 2024 Adarsh Verma | Built with <i class="fas fa-heart"></i> using HTML, CSS & JavaScript</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
