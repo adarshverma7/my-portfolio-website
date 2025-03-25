@@ -5,40 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adarsh Verma | AI Enthusiast & Web Developer</title>
-    <meta name="description" content="Portfolio of Adarsh Verma, a Web Developer and AI Enthusiast specializing in AI, Machine Learning, and Web Development.">
-    <meta name="keywords" content="Adarsh Verma, Web Developer, AI Enthusiast, Machine Learning, Portfolio">
-    <meta name="author" content="Adarsh Verma">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Header Section -->
-    <header id="header">
+    <div id="header">
         <div class="container">
             <nav>
+                <div class="logo">Adarsh</div>
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" id="close-btn"></i>
                 </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
+                <i class="fas fa-bars" id="menu-btn"></i>
             </nav>
             <div class="header-text">
                 <p>Web Developer | AI Enthusiast | Tech Innovator</p>
-                <h1>Hi, I'm <span class="highlight">Adarsh Verma</span><br>Aspiring Software Engineer</h1><br>
-                <p>I specialize in building intelligent systems and crafting user-friendly digital experiences. <br> My goal is to solve real-world problems through innovative technology and creative solutions.</p><br>
+                <h1>Hi, I'm <span>Adarsh Verma</span><br>Aspiring Software Engineer</h1>
                 <a href="#about" class="btn btn-primary">Explore My Work <i class="fas fa-arrow-down"></i></a>
             </div>
         </div>
-    </header>
+    </div>
 
     <!-- About Section -->
-    <section id="about">
+    <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
@@ -46,95 +41,93 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>
-                        <i class="fas fa-hand-peace"></i> Hi, I'm <strong>Adarsh Verma</strong>, a <strong>B.Tech Computer Science</strong> student at 
-                        <strong>Sikkim Manipal Institute of Technology</strong> (2025). Passionate about <strong>AI, Machine Learning, and Web Development</strong>, 
-                        I love building intelligent and scalable solutions.
-                    </p>
-                    <br>
-                    <p>
-                        <i class="fas fa-briefcase"></i> <strong>Professional Experience:</strong><br>
-                        - <strong>Infosys Intern:</strong> Built a <strong>Meeting Summarizer & Plan of Action Generator</strong> using <strong>NLP</strong>.<br>
-                        - Developed a <strong>Personality Assessment Tool</strong> (Big Five Model).
-                    </p>
-                    <br>
-                    <p>
-                        <i class="fas fa-lightbulb"></i> <strong>Beyond Coding:</strong><br>
-                        - Solved <strong>100+ LeetCode problems</strong> to sharpen my problem-solving skills.<br>
-                        - Avid <strong>chess player</strong> and <strong>cricket enthusiast</strong>.<br>
-                        - Always exploring new technologies to stay ahead in the tech world.
-                    </p>
-                    <br>
-                    <p>
-                        <i class="fas fa-rocket"></i> Let's innovate and build something amazing together!
-                    </p>
-                    <a href="#skills" class="btn btn-secondary">View Skills <i class="fas fa-arrow-right"></i></a>
+                    <p>Computer Science student at Sikkim Manipal Institute of Technology (2025) specializing in AI/ML and Web Development. Passionate about building intelligent solutions through technology.</p>
+                    
+                    <p>Infosys intern where I developed an NLP-based Meeting Summarizer presented at the Technical Summit. Created multiple projects including personality assessment tools and recommendation systems.</p>
+                    
+                    <p>Strong problem-solving skills with 100+ LeetCode solutions. Active chess player and cricketer with tournament wins.</p>
+                
+                    <!-- Tabs for Skills, Experience, and Education -->
+                    <div class="tab-titles">
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages:</span> C++, Python, JavaScript , Dart</li>
+                            <li><span>Mobile Dev:</span> Flutter, Firebase</li>
+                            <li><span>Game Dev:</span> SFML (C++)</li>
+                            <li><span>Web:</span> HTML/CSS, React, Node.js</li>
+                            <li><span>AI/ML:</span> NLP, Predictive Modeling</li>
+                            <li><span>Tools:</span> AWS, Git, Streamlit</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>Infosys Intern</span> (2024): Developed NLP meeting tools</li>
+                            <li><span>Aptitude Booster</span> (Flutter): Quiz app for math speed in exams</li>
+                            <li><span>Asteroid Attack</span> (SFML): 2D space shooter game in C++</li>
+                            <li><span>Personality Prediction</span>: Five-Factor Model implementation</li>
+                            <li><span>Portfolio Website</span>: Responsive design implementation</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>B.Tech CSE</span>: SMIT (2025) - 7.7 CGPA</li>
+                            <li><span>12th</span>: Lucknow Public School - 80%</li>
+                            <li><span>10th</span>: Manasthali Education Centre - 86%</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Skills Section -->
-    <section id="skills">
+    <!-- Services Section -->
+    <div id="services">
         <div class="container">
-            <h1 class="sub-title">Skills</h1>
-            <div class="skills-list">
-                <div class="skill-card">
-                    <i class="fas fa-code"></i>
-                    <h2>Programming Languages</h2>
-                    <div class="skill">
-                        <h3>C++</h3>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 75%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <h3>SQL</h3>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 60%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <h3>Python</h3>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 50%;"></div>
-                        </div>
-                    </div>
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design & Development</h2>
+                    <p>Crafting responsive and engaging websites with modern web technologies like HTML, CSS, and JavaScript.</p>
                 </div>
-                <div class="skill-card">
-                    <i class="fas fa-brain"></i>
-                    <h2>Emerging Technologies</h2>
-                    <p>Artificial Intelligence, Machine Learning, Data Analysis</p>
+                <div>
+                    <i class="fa-solid fa-brain"></i>
+                    <h2>AI & Machine Learning</h2>
+                    <p>Leveraging AI and ML to build intelligent systems, including NLP, predictive models, and more.</p>
                 </div>
-                <div class="skill-card">
-                    <i class="fas fa-tools"></i>
-                    <h2>Tools & Platforms</h2>
-                    <p>SFML, Git, AWS (S3), Streamlit, Pandas, Numpy, sklearn, Jupyter Notebook, Flutter, Dart, Android Studio</p>
+                <div>
+                    <i class="fa-solid fa-terminal"></i>
+                    <h2>Programming Solutions</h2>
+                    <p>Experienced in solving complex problems using C, C++, and Python. Successfully solved 100+ LeetCode challenges.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Projects Section -->
-    <section id="projects">
+    <!-- Portfolio Section -->
+    <div id="portfolio">
         <div class="container">
             <h1 class="sub-title">My Projects</h1>
             <div class="projects-list" id="projects-list">
                 <!-- Projects will be dynamically loaded here -->
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Call-to-Action Section -->
-    <section id="cta">
+    <div id="cta">
         <div class="container">
             <h2>Let's Build Something Amazing Together!</h2>
             <a href="#contact" class="btn btn-primary">Get In Touch</a>
         </div>
-    </section>
+    </div>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <div id="contact">
         <div class="container">
             <h1 class="sub-title">Get In Touch</h1>
             <div class="row">
@@ -144,7 +137,7 @@
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/adarsh-verma-250830232" target="_blank"><i class="fab fa-linkedin"></i></a>
                         <a href="https://github.com/adarshverma7" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://leetcode.com/adarshverma7" target="_blank"><i class="fas fa-code"></i></a>
+                        <a href="https://leetcode.com/u/adarshverma_" target="_blank"><i class="fas fa-code"></i></a>
                     </div>
                     <a href="Resume.pdf" download class="btn btn-primary">Download CV</a>
                 </div>
@@ -159,19 +152,19 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Footer Section -->
     <footer>
         <div class="footer-nav">
             <a href="#header">Home</a>
             <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Projects</a>
             <a href="#contact">Contact</a>
         </div>
         <div class="copyright">
-            <p>© 2024 Adarsh Verma | Built with <i class="fas fa-heart"></i> using HTML, CSS & JavaScript</p>
+            <p>© 2025 Adarsh Verma | Crafted with ❤️ using HTML, CSS & JavaScript</p>
         </div>
     </footer>
 
